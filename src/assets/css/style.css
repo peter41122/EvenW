@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 1136px) and (min-width: 600px) {
+  .mobile-landing {
+    right: 0rem !important;
+  }
+}
+
+@media screen and (max-width: 1260px) and (min-width: 1136px) {
+  .mobile-landing {
+    right: 6rem !important;
+  }
+}
+
+.border-bottom {
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.css-cveggr-MuiListItemIcon-root {
+  min-width: 45px !important;
+}
+
+.absolute {
+  position: absolute !important;
+}
+
+.header {
+  background-color: #f8f9fb;
+}
+
+.blue-cu {
+  color: #012061 !important;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    clip-path: ellipse(66% 77% at 50% 21%);
+  }
+}
