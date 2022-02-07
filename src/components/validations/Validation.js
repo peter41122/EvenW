@@ -39,7 +39,7 @@ const Validation = {
     setValidations((res) => ({
       ...res,
       pattern: {
-        value: /^([0|\+[0-9]{1,5})?([7-9][0-9]{9})$/,
+        value: /^([0|[0-9]{1,5})?([7-9][0-9]{9})$/,
         message: Message?.invalid(label),
       },
     }));

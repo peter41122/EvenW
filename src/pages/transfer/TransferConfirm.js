@@ -70,7 +70,7 @@ const TransferConfirm = forwardRef((props, ref) => {
                     />
                   </InputValidation>
                   <div className="text-[14px] mb-10 mt-2 font-medium text-gray-500 ml-1">
-                    Enter your phone number to verify you payment.
+                    Enter your phone number to verify your payment.
                   </div>
                   <BtnPrimary onClick={handleSubmit}>Confirm</BtnPrimary>
                   <div className="text-[14px] mt-1 text-center text-gray-500">
@@ -83,7 +83,7 @@ const TransferConfirm = forwardRef((props, ref) => {
               </>
             )}
           />
-          <div className="hidden md:block bg-blue-cu relative">
+          <div className="hidden md:block bg-blue-custom relative">
             <IconButton
               className="absolute right-10 top-10"
               color="inherit"

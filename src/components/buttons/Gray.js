@@ -12,7 +12,7 @@ const Gray = ({
   const handleClick = (e) => {
     e.preventDefault();
 
-    onClick && onClick();
+    if (!isLoading && onClick) onClick();
   };
   return (
     <>
@@ -20,7 +20,7 @@ const Gray = ({
         href="/"
         className={`
           ${className}
-          flex w-auto justify-center items-center bg-gray-cu rounded-[13px] text-[14px] p-3 text-[#000]
+          flex w-auto justify-center items-center bg-gray-custom rounded-[13px] text-[14px] p-3 text-[#000]
         `}
         onClick={handleClick}
       >

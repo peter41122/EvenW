@@ -1,10 +1,10 @@
 import { forwardRef, useImperativeHandle, useRef, useState } from "react";
 import { IconButton } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
-import { BtnPrimary } from "../../components/buttons";
-import { FullScreen } from "../../components/dialogs";
-import Input from "../../components/inputs";
-import { FormValidation, InputValidation } from "../../components/validations";
+import { BtnPrimary } from "../../../components/buttons";
+import { FullScreen } from "../../../components/dialogs";
+import Input from "../../../components/inputs";
+import { FormValidation, InputValidation } from "../../../components/validations";
 
 const RecipientRegistration = forwardRef((props, ref) => {
   const recipientRegistration = useRef();
@@ -131,7 +131,7 @@ const RecipientRegistration = forwardRef((props, ref) => {
               </>
             )}
           />
-          <div className="hidden md:block bg-blue-cu relative">
+          <div className="hidden md:block bg-blue-custom relative">
             <IconButton
               className="absolute right-10 top-10"
               color="inherit"

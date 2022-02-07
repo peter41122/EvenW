@@ -8,11 +8,11 @@ import TransferWithinAStationIcon from "@mui/icons-material/TransferWithinAStati
 import HowToRegOutlinedIcon from "@mui/icons-material/HowToRegOutlined";
 import CardGiftcardOutlinedIcon from "@mui/icons-material/CardGiftcardOutlined";
 import Drawers from "../../components/drawers";
-import RecipientRegistration from "../../pages/register/information";
+import RecipientRegistration from "../../pages/auth/register/Information";
 import SendMoney from "../../pages/sendMoney";
-import SendMoneyConfirm from "../../pages/sendMoney/confirm";
+import SendMoneyConfirm from "../../pages/sendMoney/SendMoneyConfirm";
 import Transfer from "../../pages/transfer";
-import TransferConfirm from "../../pages/transfer/confirm";
+import TransferConfirm from "../../pages/transfer/TransferConfirm";
 
 const Sidebar = forwardRef((props, ref) => {
   const drawer = useRef();
@@ -63,11 +63,11 @@ const Sidebar = forwardRef((props, ref) => {
                 <ListItemIcon>
                   <CardGiftcardOutlinedIcon
                     fontSize="medium"
-                    className="blue-cu"
+                    className="blue-custom"
                   />
                 </ListItemIcon>
                 <ListItemText>
-                  <span className="text-[14px] text-gray-800">Send Mony</span>
+                  <span className="text-[14px] text-gray-800">Send Money</span>
                 </ListItemText>
               </ListItem>
               <ListItem
@@ -77,12 +77,12 @@ const Sidebar = forwardRef((props, ref) => {
                 <ListItemIcon>
                   <CardGiftcardOutlinedIcon
                     fontSize="medium"
-                    className="blue-cu"
+                    className="blue-custom"
                   />
                 </ListItemIcon>
                 <ListItemText>
                   <span className="text-[14px] text-gray-800">
-                    Send Monyn - Confirm
+                    Send Money - Confirm
                   </span>
                 </ListItemText>
               </ListItem>
@@ -91,7 +91,7 @@ const Sidebar = forwardRef((props, ref) => {
                 onClick={(e) => recipientRegistration.current?.changeStatus()}
               >
                 <ListItemIcon>
-                  <HowToRegOutlinedIcon fontSize="medium" className="blue-cu" />
+                  <HowToRegOutlinedIcon fontSize="medium" className="blue-custom" />
                 </ListItemIcon>
                 <ListItemText>
                   <span className="text-[14px] text-gray-800">
@@ -106,7 +106,7 @@ const Sidebar = forwardRef((props, ref) => {
                 <ListItemIcon>
                   <TransferWithinAStationIcon
                     fontSize="medium"
-                    className="blue-cu"
+                    className="blue-custom"
                   />
                 </ListItemIcon>
                 <ListItemText>
@@ -122,7 +122,7 @@ const Sidebar = forwardRef((props, ref) => {
                 <ListItemIcon>
                   <TransferWithinAStationIcon
                     fontSize="medium"
-                    className="blue-cu"
+                    className="blue-custom"
                   />
                 </ListItemIcon>
                 <ListItemText>

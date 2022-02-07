@@ -1,19 +1,30 @@
 import { useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
-import Input from "../../components/inputs";
-import { BtnPrimary, BtnGray } from "../../components/buttons";
-import { FormValidation, InputValidation } from "../../components/validations";
+import Notification from "../../../services/notification";
+import Input from "../../../components/inputs";
+import { BtnPrimary, BtnGray } from "../../../components/buttons";
+import {
+  FormValidation,
+  InputValidation,
+} from "../../../components/validations";
 
 const Login = () => {
   const navigate = useNavigate();
 
+  const [isLoadingSendData, setIsLoadingSendData] = useState(false);
   const [state, setState] = useState({
-    email: "",
-    password: "",
+    email: "info@even.com",
+    password: "123456789",
   });
 
   const handleSubmit = (data) => {
-    alert(`login IN ${JSON.stringify(data)}`);
+    setIsLoadingSendData(true);
+
+    setTimeout(() => {
+      setIsLoadingSendData(false);
+
+      Notification.success("You have successfully logged in.");
+    }, 2000);
   };
 
   const handleChange = (name, value) => {
@@ -37,7 +48,7 @@ const Login = () => {
           render={(handleSubmit) => (
             <div className="mt-[50px]">
               <InputValidation
-                label="email"
+                label="Email"
                 rules="required|email"
                 inputChange={handleChange}
               >
@@ -50,7 +61,7 @@ const Login = () => {
                 />
               </InputValidation>
               <InputValidation
-                label="password"
+                label="Password"
                 rules="required"
                 inputChange={handleChange}
               >
@@ -64,11 +75,12 @@ const Login = () => {
               </InputValidation>
 
               <div className="text-gray-500 text-right mt-4 mb-6 text-[13px]">
-                <NavLink to="">Forget Password?</NavLink>
+                <NavLink to="/password/reset">Forget Password?</NavLink>
               </div>
 
               <BtnPrimary
                 className="w-full py-3 px-8 rounded-full mb-4"
+                isLoading={isLoadingSendData}
                 onClick={handleSubmit}
               >
                 Login

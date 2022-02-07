@@ -12,7 +12,7 @@ const Warning = ({
   const handleClick = (e) => {
     e.preventDefault();
 
-    onClick && onClick();
+    if (!isLoading && onClick) onClick();
   };
   return (
     <>

@@ -35,7 +35,7 @@ const Transfer = forwardRef((props, ref) => {
     <>
       <FullScreen ref={transfer} title="Transfer Summary">
         <div className="grid grid-cols-1 md:grid-cols-2 md:h-full">
-          <div className="hidden md:block bg-blue-cu relative">
+          <div className="hidden md:block bg-blue-custom relative">
             <IconButton
               className="absolute left-10 top-10"
               color="inherit"

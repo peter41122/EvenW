@@ -12,7 +12,7 @@ const Primary = ({
   const handleClick = (e) => {
     e.preventDefault();
 
-    onClick && onClick();
+    if (!isLoading && onClick) onClick();
   };
   return (
     <>
@@ -20,7 +20,7 @@ const Primary = ({
         href="/"
         className={`
           ${className}
-          flex w-auto justify-center items-center bg-blue-cu rounded-full text-[14px] p-3 text-white
+          flex w-auto justify-center items-center bg-blue-custom rounded-full text-[14px] p-3 text-white
         `}
         onClick={handleClick}
       >

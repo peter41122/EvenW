@@ -37,7 +37,7 @@ const SendMoney = forwardRef((props, ref) => {
     <>
       <FullScreen ref={sendMoney} title="Send Money">
         <div className="grid grid-cols-1 md:grid-cols-2 md:h-full">
-          <div className="hidden md:block bg-blue-cu relative">
+          <div className="hidden md:block bg-blue-custom relative">
             <IconButton
               className="absolute left-10 top-10"
               color="inherit"
@@ -63,7 +63,7 @@ const SendMoney = forwardRef((props, ref) => {
                   <AlertWarning className="mb-6">
                     Amount to be transfer
                   </AlertWarning>
-                  <AletPrimary className="mb-1">Amount Received</AletPrimary>
+                  <AletPrimary className="mb-1">Amount received</AletPrimary>
                   <div className="text-[12px] text-gray-400 mb-4 ml-1">
                     * Estimated Delivery 1-3 Days
                   </div>

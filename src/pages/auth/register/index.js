@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { BtnPrimary } from "../../components/buttons";
-import Input from "../../components/inputs";
-import { FormValidation, InputValidation } from "../../components/validations";
+import { BtnPrimary } from "../../../components/buttons";
+import Input from "../../../components/inputs";
+import { FormValidation, InputValidation } from "../../../components/validations";
 
 const Register = () => {
   const [state, setState] = useState({ email: "" });
@@ -27,7 +27,7 @@ const Register = () => {
             <div className="mt-[50px]">
               <div className="sm:inline-block">
                 <InputValidation
-                  label="email"
+                  label="Email"
                   rules="required|email"
                   inputChange={handleChange}
                 >

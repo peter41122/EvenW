@@ -29,7 +29,7 @@ const Input = ({
         <input
           name={name}
           value={value}
-          className="bg-gray-cu p-3 text-[14px] w-full"
+          className="bg-gray-custom p-3 text-[14px] w-full"
           placeholder={placeholder}
           onChange={handleChange}
           autoComplete={autoComplete}
